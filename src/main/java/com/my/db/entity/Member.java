@@ -22,7 +22,7 @@ public class Member implements Serializable {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO, generator="native")
     @GenericGenerator(name="native", strategy="native")
-    @ApiModelProperty(required=true, readOnly=true, position=1, value="會員ID")
+    @ApiModelProperty(required=true, readOnly=true, position=1, value="流水號")
     protected Long id;
 
     @ApiModelProperty(required = true, value = "會員登入帳號")
