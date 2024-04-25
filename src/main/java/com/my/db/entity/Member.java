@@ -15,7 +15,7 @@ import java.util.Date;
 @Table(name = "member",
         indexes = {
                 @Index(name = "member_idx_1",  columnList="account, isActive"),
-                @Index(name = "member_idx_2",  columnList="account, password")
+//                @Index(name = "member_idx_2",  columnList="account, password")
         }
 )
 public class Member implements Serializable {
