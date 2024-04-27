@@ -1,4 +1,5 @@
 package com.my.db.entity;
+
 import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -29,7 +30,7 @@ public class Member implements Serializable {
     @Column(nullable = false, length = 40, unique = true, updatable = false)
     protected String account;
 
-    @ApiModelProperty(required = true, value = "會員登入密碼")
+    @ApiModelProperty(required = true,  value = "會員登入密碼")
     @Column(nullable = false, length = 512)
     protected String password;
 
