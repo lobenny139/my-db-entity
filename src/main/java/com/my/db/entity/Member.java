@@ -36,7 +36,7 @@ public class Member implements Serializable {
 
     @ApiModelProperty(required = true, value = "是否啟用, 0->否/1->是")
     @Column(nullable = false, length = 5)
-    protected int isActive;
+    protected Integer isActive;
 
     @ApiModelProperty(required = true, value = "會員名稱")
     @Column(nullable = false, length = 20)
